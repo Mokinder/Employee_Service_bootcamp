@@ -20,7 +20,7 @@ public class EmployeeService {
     }
 
     public Optional<Employee> getByEmployeeId(Long id) {
-        return employeeRepository.findById(id);
+        return Optional.of(employeeRepository.findById(id).orElseThrow());
     }
 
     public List<Employee> getAll() {

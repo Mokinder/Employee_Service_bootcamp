@@ -1,0 +1,917 @@
+2025-08-19T11:24:02.234+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 24.0.2 with PID 94396 (/Users/mokinders/IdeaProjects/employee-service/target/classes started by mokinders in /Users/mokinders/IdeaProjects/employee-service)
+2025-08-19T11:24:02.238+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T11:24:02.262+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8088
+2025-08-19T11:24:02.263+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=employee-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T11:24:02.754+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:24:02.759+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-19T11:24:02.775+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mokinder.employee_service.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-19T11:24:02.775+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2025-08-19T11:24:02.781+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:24:02.782+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T11:24:02.834+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-08-19T11:24:02.906+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f123083d-72e9-3702-9da6-fd10fab30719
+2025-08-19T11:24:03.155+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-19T11:24:03.162+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T11:24:03.163+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T11:24:03.194+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T11:24:03.194+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2025-08-19T11:24:03.491+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T11:24:03.520+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T11:24:03.537+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T11:24:03.668+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T11:24:03.683+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T11:24:03.787+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a62ef67e-f561-49b7-9e05-a5a695fdc71f user=SA
+2025-08-19T11:24:03.788+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T11:24:03.820+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T11:24:04.200+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T11:24:04.226+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:24:04.382+05:30  WARN 94396 --- [employee-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T11:24:04.692+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a62ef67e-f561-49b7-9e05-a5a695fdc71f'
+2025-08-19T11:24:04.705+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T11:24:04.721+05:30  WARN 94396 --- [employee-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T11:24:04.725+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T11:24:04.760+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T11:24:04.771+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T11:24:04.773+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:24:04.777+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T11:24:04.777+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T11:24:04.777+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T11:24:04.777+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T11:24:04.777+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T11:24:04.777+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T11:24:04.777+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T11:24:05.010+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T11:24:05.011+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T11:24:05.012+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T11:24:05.013+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755582845012 with initial instances count: 0
+2025-08-19T11:24:05.015+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2025-08-19T11:24:05.015+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755582845015, current=UP, previous=STARTING]
+2025-08-19T11:24:05.016+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:24:05.023+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-19T11:24:05.024+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-19T11:24:05.046+05:30  INFO 94396 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 3.377 seconds (process running for 3.731)
+2025-08-19T11:24:05.081+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:24:35.051+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T11:24:35.061+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T11:24:35.062+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T11:24:35.062+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T11:24:35.062+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T11:24:35.062+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-08-19T11:24:35.062+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T11:24:35.101+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-CacheRefreshExecutor-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T11:25:12.284+05:30  INFO 94396 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T11:25:12.285+05:30  INFO 94396 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T11:25:12.294+05:30  INFO 94396 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-08-19T11:25:13.448+05:30  WARN 94396 --- [employee-service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-19T11:25:13.449+05:30  WARN 94396 --- [employee-service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 1 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:923) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1069) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:215) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:268) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:226) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:980) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:957) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:556) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1819) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:204) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:942) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:203) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-19T11:28:27.797+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2025-08-19T11:28:27.798+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755583107798, current=DOWN, previous=UP]
+2025-08-19T11:28:27.799+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:28:27.807+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T11:28:27.810+05:30  INFO 94396 --- [employee-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T11:28:27.812+05:30  INFO 94396 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:28:27.817+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:28:27.823+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T11:28:27.825+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T11:28:28.293+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T11:28:31.299+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T11:28:31.333+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - deregister  status: 200
+2025-08-19T11:28:31.334+05:30  INFO 94396 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T11:28:34.626+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 24.0.2 with PID 94625 (/Users/mokinders/IdeaProjects/employee-service/target/classes started by mokinders in /Users/mokinders/IdeaProjects/employee-service)
+2025-08-19T11:28:34.628+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T11:28:34.650+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8088
+2025-08-19T11:28:34.651+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=employee-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T11:28:35.143+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:28:35.144+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-19T11:28:35.157+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mokinder.employee_service.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-19T11:28:35.158+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2025-08-19T11:28:35.163+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:28:35.163+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T11:28:35.218+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-08-19T11:28:35.290+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=df4c20e8-b157-3ee5-8fb9-5f78581303de
+2025-08-19T11:28:35.543+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-19T11:28:35.552+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T11:28:35.552+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T11:28:35.582+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T11:28:35.583+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2025-08-19T11:28:35.799+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T11:28:35.829+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T11:28:35.845+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T11:28:35.973+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T11:28:35.987+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T11:28:36.097+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:94e7aa5c-aca4-4d90-862f-6efd9b08efcf user=SA
+2025-08-19T11:28:36.097+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T11:28:36.127+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T11:28:36.503+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T11:28:36.530+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:28:36.690+05:30  WARN 94625 --- [employee-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T11:28:36.994+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:94e7aa5c-aca4-4d90-862f-6efd9b08efcf'
+2025-08-19T11:28:37.017+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T11:28:37.038+05:30  WARN 94625 --- [employee-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T11:28:37.043+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T11:28:37.080+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T11:28:37.093+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T11:28:37.095+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:28:37.098+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T11:28:37.099+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T11:28:37.099+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T11:28:37.099+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T11:28:37.099+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T11:28:37.099+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T11:28:37.099+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T11:28:37.250+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T11:28:37.251+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T11:28:37.252+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T11:28:37.253+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755583117253 with initial instances count: 2
+2025-08-19T11:28:37.255+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2025-08-19T11:28:37.256+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755583117256, current=UP, previous=STARTING]
+2025-08-19T11:28:37.256+05:30  INFO 94625 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:28:37.274+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-19T11:28:37.275+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-19T11:28:37.284+05:30  INFO 94625 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:28:37.296+05:30  INFO 94625 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 3.388 seconds (process running for 3.748)
+2025-08-19T11:28:44.489+05:30  INFO 94625 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T11:28:44.489+05:30  INFO 94625 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T11:28:44.490+05:30  INFO 94625 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-19T11:33:37.106+05:30  INFO 94625 --- [employee-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:34:04.933+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2025-08-19T11:34:04.935+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755583444935, current=DOWN, previous=UP]
+2025-08-19T11:34:04.935+05:30  INFO 94625 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:34:04.941+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T11:34:04.945+05:30  INFO 94625 --- [employee-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T11:34:04.947+05:30  INFO 94625 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:34:04.951+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:34:04.954+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T11:34:04.955+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T11:34:04.957+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T11:34:07.962+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T11:34:07.963+05:30  WARN 94625 --- [employee-service] [DiscoveryClient-%d] [                                                 ] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-08-19T11:34:07.972+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - deregister  status: 200
+2025-08-19T11:34:07.972+05:30  INFO 94625 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T11:34:10.551+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 24.0.2 with PID 94820 (/Users/mokinders/IdeaProjects/employee-service/target/classes started by mokinders in /Users/mokinders/IdeaProjects/employee-service)
+2025-08-19T11:34:10.552+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T11:34:10.571+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8088
+2025-08-19T11:34:10.572+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=employee-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T11:34:11.024+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:34:11.024+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-19T11:34:11.039+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mokinder.employee_service.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-19T11:34:11.039+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2025-08-19T11:34:11.045+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:34:11.045+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T11:34:11.100+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-08-19T11:34:11.172+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=df4c20e8-b157-3ee5-8fb9-5f78581303de
+2025-08-19T11:34:11.407+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-19T11:34:11.414+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T11:34:11.414+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T11:34:11.442+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T11:34:11.442+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 870 ms
+2025-08-19T11:34:11.644+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T11:34:11.668+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T11:34:11.683+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T11:34:11.844+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T11:34:11.863+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T11:34:11.952+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a554ea21-ac84-455f-bae4-bfb4ef52d8ba user=SA
+2025-08-19T11:34:11.953+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T11:34:11.984+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T11:34:12.351+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T11:34:12.379+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:34:12.541+05:30  WARN 94820 --- [employee-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T11:34:12.984+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a554ea21-ac84-455f-bae4-bfb4ef52d8ba'
+2025-08-19T11:34:12.998+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T11:34:13.018+05:30  WARN 94820 --- [employee-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T11:34:13.024+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T11:34:13.070+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T11:34:13.083+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T11:34:13.085+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:34:13.089+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T11:34:13.089+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T11:34:13.089+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T11:34:13.089+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T11:34:13.089+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T11:34:13.090+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T11:34:13.090+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T11:34:13.299+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T11:34:13.300+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T11:34:13.301+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T11:34:13.301+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755583453301 with initial instances count: 2
+2025-08-19T11:34:13.304+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2025-08-19T11:34:13.304+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755583453304, current=UP, previous=STARTING]
+2025-08-19T11:34:13.305+05:30  INFO 94820 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:34:13.316+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-19T11:34:13.316+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-19T11:34:13.325+05:30  INFO 94820 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:34:13.339+05:30  INFO 94820 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 3.718 seconds (process running for 4.058)
+2025-08-19T11:34:47.930+05:30  INFO 94820 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T11:34:47.930+05:30  INFO 94820 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T11:34:47.933+05:30  INFO 94820 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-19T11:36:19.214+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2025-08-19T11:36:19.215+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755583579215, current=DOWN, previous=UP]
+2025-08-19T11:36:19.215+05:30  INFO 94820 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:36:19.219+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T11:36:19.221+05:30  INFO 94820 --- [employee-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T11:36:19.222+05:30  INFO 94820 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:36:19.227+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:36:19.231+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T11:36:19.232+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T11:36:19.234+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T11:36:22.239+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T11:36:22.247+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - deregister  status: 200
+2025-08-19T11:36:22.247+05:30  INFO 94820 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T11:36:24.800+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 24.0.2 with PID 94917 (/Users/mokinders/IdeaProjects/employee-service/target/classes started by mokinders in /Users/mokinders/IdeaProjects/employee-service)
+2025-08-19T11:36:24.802+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T11:36:24.824+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8088
+2025-08-19T11:36:24.824+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=employee-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T11:36:25.410+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:36:25.413+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-19T11:36:25.430+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mokinder.employee_service.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-19T11:36:25.430+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+2025-08-19T11:36:25.436+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:36:25.437+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T11:36:25.499+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-08-19T11:36:25.584+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=df4c20e8-b157-3ee5-8fb9-5f78581303de
+2025-08-19T11:36:25.880+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-19T11:36:25.888+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T11:36:25.888+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T11:36:25.918+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T11:36:25.918+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1093 ms
+2025-08-19T11:36:26.174+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T11:36:26.197+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T11:36:26.213+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T11:36:26.332+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T11:36:26.346+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T11:36:26.433+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:48a1d217-aeec-4070-907b-310e82d34a2b user=SA
+2025-08-19T11:36:26.434+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T11:36:26.468+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T11:36:26.833+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T11:36:26.859+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:36:27.050+05:30  WARN 94917 --- [employee-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T11:36:27.448+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:48a1d217-aeec-4070-907b-310e82d34a2b'
+2025-08-19T11:36:27.467+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T11:36:27.492+05:30  WARN 94917 --- [employee-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T11:36:27.498+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T11:36:27.540+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T11:36:27.551+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T11:36:27.553+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:36:27.556+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T11:36:27.556+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T11:36:27.556+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T11:36:27.557+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T11:36:27.557+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T11:36:27.557+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T11:36:27.557+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T11:36:27.713+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T11:36:27.715+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T11:36:27.716+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T11:36:27.716+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755583587716 with initial instances count: 2
+2025-08-19T11:36:27.720+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2025-08-19T11:36:27.721+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755583587721, current=UP, previous=STARTING]
+2025-08-19T11:36:27.721+05:30  INFO 94917 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:36:27.733+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-19T11:36:27.734+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-19T11:36:27.743+05:30  INFO 94917 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:36:27.757+05:30  INFO 94917 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 3.822 seconds (process running for 4.171)
+2025-08-19T11:37:04.055+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T11:37:04.056+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T11:37:04.058+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-19T11:37:04.088+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-1] [68a41488297660465dfc787bc0039212-5dfc787bc0039212] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getByEmployeeId(..)
+2025-08-19T11:37:04.123+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-1] [68a41488297660465dfc787bc0039212-5dfc787bc0039212] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getByEmployeeId(..) with result: Optional.empty
+2025-08-19T11:37:25.451+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-3] [68a4149db2a91b02cab38d24daeb8325-cab38d24daeb8325] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.addEmployee(..)
+2025-08-19T11:37:25.494+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-3] [68a4149db2a91b02cab38d24daeb8325-cab38d24daeb8325] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.addEmployee(..) with result: com.mokinder.employee_service.model.Employee@557a600b
+2025-08-19T11:37:28.894+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-4] [68a414a0bbae9f4fd2ade373d79bcb9c-d2ade373d79bcb9c] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getAll()
+2025-08-19T11:37:28.965+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-4] [68a414a0bbae9f4fd2ade373d79bcb9c-d2ade373d79bcb9c] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getAll() with result: [com.mokinder.employee_service.model.Employee@2e850417]
+2025-08-19T11:37:31.403+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-5] [68a414a31112868fbb2f8d9fb84b62d5-bb2f8d9fb84b62d5] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getByEmployeeId(..)
+2025-08-19T11:37:31.415+05:30  INFO 94917 --- [employee-service] [http-nio-8081-exec-5] [68a414a31112868fbb2f8d9fb84b62d5-bb2f8d9fb84b62d5] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getByEmployeeId(..) with result: Optional[com.mokinder.employee_service.model.Employee@262e5447]
+2025-08-19T11:41:27.510+05:30  INFO 94917 --- [employee-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:43:20.574+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2025-08-19T11:43:20.576+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755584000576, current=DOWN, previous=UP]
+2025-08-19T11:43:20.576+05:30  INFO 94917 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:43:20.585+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T11:43:20.588+05:30  INFO 94917 --- [employee-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T11:43:20.598+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:43:20.603+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T11:43:20.605+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T11:43:20.605+05:30  INFO 94917 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:43:20.607+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T11:43:23.612+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T11:43:23.621+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - deregister  status: 200
+2025-08-19T11:43:23.621+05:30  INFO 94917 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T11:43:26.019+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 24.0.2 with PID 95772 (/Users/mokinders/IdeaProjects/employee-service/target/classes started by mokinders in /Users/mokinders/IdeaProjects/employee-service)
+2025-08-19T11:43:26.021+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T11:43:26.041+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8088
+2025-08-19T11:43:26.041+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=employee-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T11:43:26.495+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:43:26.495+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-19T11:43:26.510+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mokinder.employee_service.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-19T11:43:26.510+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2025-08-19T11:43:26.515+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:43:26.516+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T11:43:26.572+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-08-19T11:43:26.642+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=df4c20e8-b157-3ee5-8fb9-5f78581303de
+2025-08-19T11:43:26.935+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-19T11:43:26.943+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T11:43:26.943+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T11:43:26.971+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T11:43:26.971+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 929 ms
+2025-08-19T11:43:27.218+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T11:43:27.243+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T11:43:27.259+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T11:43:27.378+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T11:43:27.390+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T11:43:27.478+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fecbf5b3-c98f-4644-95a0-061e55bfa859 user=SA
+2025-08-19T11:43:27.479+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T11:43:27.511+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T11:43:27.868+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T11:43:27.893+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:43:28.082+05:30  WARN 95772 --- [employee-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T11:43:28.460+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fecbf5b3-c98f-4644-95a0-061e55bfa859'
+2025-08-19T11:43:28.480+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T11:43:28.504+05:30  WARN 95772 --- [employee-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T11:43:28.509+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T11:43:28.545+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T11:43:28.556+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T11:43:28.558+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:43:28.561+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T11:43:28.561+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T11:43:28.561+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T11:43:28.561+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T11:43:28.561+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T11:43:28.561+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T11:43:28.562+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T11:43:28.717+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T11:43:28.719+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T11:43:28.720+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T11:43:28.720+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755584008720 with initial instances count: 2
+2025-08-19T11:43:28.724+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2025-08-19T11:43:28.724+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755584008724, current=UP, previous=STARTING]
+2025-08-19T11:43:28.725+05:30  INFO 95772 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:43:28.737+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-19T11:43:28.737+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-19T11:43:28.747+05:30  INFO 95772 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:43:28.760+05:30  INFO 95772 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 3.538 seconds (process running for 3.863)
+2025-08-19T11:43:47.303+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T11:43:47.304+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T11:43:47.305+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-19T11:43:47.333+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [68a4161bd5d854a4d41f7cad9e1b6764-d41f7cad9e1b6764] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.getEmployeeByDepartment(..)
+2025-08-19T11:43:47.333+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [68a4161bd5d854a4d41f7cad9e1b6764-d41f7cad9e1b6764] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getEmployeeByDepartment(..)
+2025-08-19T11:43:47.334+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [68a4161bd5d854a4d41f7cad9e1b6764-d41f7cad9e1b6764] c.m.employee_service.aspect.Logging      : Entering method: EmployeeRepository.findByDepartmentId(..)
+2025-08-19T11:43:47.413+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [68a4161bd5d854a4d41f7cad9e1b6764-d41f7cad9e1b6764] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeRepository.findByDepartmentId(..) with result: []
+2025-08-19T11:43:47.413+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [68a4161bd5d854a4d41f7cad9e1b6764-d41f7cad9e1b6764] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getEmployeeByDepartment(..) with result: []
+2025-08-19T11:43:47.413+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-2] [68a4161bd5d854a4d41f7cad9e1b6764-d41f7cad9e1b6764] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.getEmployeeByDepartment(..) with result: []
+2025-08-19T11:43:58.408+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a416266e5c5ac75516e676b690fe70-5516e676b690fe70] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.createEmployee(..)
+2025-08-19T11:43:58.409+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a416266e5c5ac75516e676b690fe70-5516e676b690fe70] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.addEmployee(..)
+2025-08-19T11:43:58.412+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a416266e5c5ac75516e676b690fe70-5516e676b690fe70] c.m.employee_service.aspect.Logging      : Entering method: CrudRepository.save(..)
+2025-08-19T11:43:58.457+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a416266e5c5ac75516e676b690fe70-5516e676b690fe70] c.m.employee_service.aspect.Logging      : Exiting method: CrudRepository.save(..) with result: com.mokinder.employee_service.model.Employee@3439af04
+2025-08-19T11:43:58.457+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a416266e5c5ac75516e676b690fe70-5516e676b690fe70] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.addEmployee(..) with result: com.mokinder.employee_service.model.Employee@3439af04
+2025-08-19T11:43:58.457+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a416266e5c5ac75516e676b690fe70-5516e676b690fe70] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.createEmployee(..) with result: com.mokinder.employee_service.model.Employee@3439af04
+2025-08-19T11:44:08.002+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-4] [68a41630a874ce9b5901907e850bac83-5901907e850bac83] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.getEmployeeById(..)
+2025-08-19T11:44:08.002+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-4] [68a41630a874ce9b5901907e850bac83-5901907e850bac83] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getByEmployeeId(..)
+2025-08-19T11:44:08.003+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-4] [68a41630a874ce9b5901907e850bac83-5901907e850bac83] c.m.employee_service.aspect.Logging      : Entering method: CrudRepository.findById(..)
+2025-08-19T11:44:08.022+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-4] [68a41630a874ce9b5901907e850bac83-5901907e850bac83] c.m.employee_service.aspect.Logging      : Exiting method: CrudRepository.findById(..) with result: Optional[com.mokinder.employee_service.model.Employee@2fac3b4d]
+2025-08-19T11:44:08.023+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-4] [68a41630a874ce9b5901907e850bac83-5901907e850bac83] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getByEmployeeId(..) with result: Optional[com.mokinder.employee_service.model.Employee@2fac3b4d]
+2025-08-19T11:44:08.023+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-4] [68a41630a874ce9b5901907e850bac83-5901907e850bac83] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.getEmployeeById(..) with result: Optional[com.mokinder.employee_service.model.Employee@2fac3b4d]
+2025-08-19T11:45:45.272+05:30  WARN 95772 --- [employee-service] [http-nio-8081-exec-6] [68a416919e3574d939d6d947f739267e-39d6d947f739267e] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected end-of-input: expected close marker for Object (start marker at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 1])]
+2025-08-19T11:46:23.029+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-9] [68a416b7cb2a53c546f3d67c95066598-46f3d67c95066598] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.createEmployee(..)
+2025-08-19T11:46:23.031+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-9] [68a416b7cb2a53c546f3d67c95066598-46f3d67c95066598] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.addEmployee(..)
+2025-08-19T11:46:23.032+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-9] [68a416b7cb2a53c546f3d67c95066598-46f3d67c95066598] c.m.employee_service.aspect.Logging      : Entering method: CrudRepository.save(..)
+2025-08-19T11:46:23.042+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-9] [68a416b7cb2a53c546f3d67c95066598-46f3d67c95066598] c.m.employee_service.aspect.Logging      : Exiting method: CrudRepository.save(..) with result: com.mokinder.employee_service.model.Employee@c09c0cd
+2025-08-19T11:46:23.042+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-9] [68a416b7cb2a53c546f3d67c95066598-46f3d67c95066598] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.addEmployee(..) with result: com.mokinder.employee_service.model.Employee@c09c0cd
+2025-08-19T11:46:23.042+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-9] [68a416b7cb2a53c546f3d67c95066598-46f3d67c95066598] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.createEmployee(..) with result: com.mokinder.employee_service.model.Employee@c09c0cd
+2025-08-19T11:46:49.142+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-10] [68a416d1129650c7a3f4fde17d8f1862-a3f4fde17d8f1862] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.createEmployee(..)
+2025-08-19T11:46:49.144+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-10] [68a416d1129650c7a3f4fde17d8f1862-a3f4fde17d8f1862] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.addEmployee(..)
+2025-08-19T11:46:49.144+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-10] [68a416d1129650c7a3f4fde17d8f1862-a3f4fde17d8f1862] c.m.employee_service.aspect.Logging      : Entering method: CrudRepository.save(..)
+2025-08-19T11:46:49.147+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-10] [68a416d1129650c7a3f4fde17d8f1862-a3f4fde17d8f1862] c.m.employee_service.aspect.Logging      : Exiting method: CrudRepository.save(..) with result: com.mokinder.employee_service.model.Employee@23d319a1
+2025-08-19T11:46:49.147+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-10] [68a416d1129650c7a3f4fde17d8f1862-a3f4fde17d8f1862] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.addEmployee(..) with result: com.mokinder.employee_service.model.Employee@23d319a1
+2025-08-19T11:46:49.148+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-10] [68a416d1129650c7a3f4fde17d8f1862-a3f4fde17d8f1862] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.createEmployee(..) with result: com.mokinder.employee_service.model.Employee@23d319a1
+2025-08-19T11:46:51.721+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-1] [68a416d3fbfe4164aefbabd7b158240c-aefbabd7b158240c] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.getAllEmployee()
+2025-08-19T11:46:51.727+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-1] [68a416d3fbfe4164aefbabd7b158240c-aefbabd7b158240c] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getAll()
+2025-08-19T11:46:51.742+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-1] [68a416d3fbfe4164aefbabd7b158240c-aefbabd7b158240c] c.m.employee_service.aspect.Logging      : Entering method: ListCrudRepository.findAll()
+2025-08-19T11:46:51.751+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-1] [68a416d3fbfe4164aefbabd7b158240c-aefbabd7b158240c] c.m.employee_service.aspect.Logging      : Exiting method: ListCrudRepository.findAll() with result: [com.mokinder.employee_service.model.Employee@97cdf03, com.mokinder.employee_service.model.Employee@46cb3585, com.mokinder.employee_service.model.Employee@237ddccc]
+2025-08-19T11:46:51.752+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-1] [68a416d3fbfe4164aefbabd7b158240c-aefbabd7b158240c] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getAll() with result: [com.mokinder.employee_service.model.Employee@97cdf03, com.mokinder.employee_service.model.Employee@46cb3585, com.mokinder.employee_service.model.Employee@237ddccc]
+2025-08-19T11:46:51.752+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-1] [68a416d3fbfe4164aefbabd7b158240c-aefbabd7b158240c] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.getAllEmployee() with result: [com.mokinder.employee_service.model.Employee@97cdf03, com.mokinder.employee_service.model.Employee@46cb3585, com.mokinder.employee_service.model.Employee@237ddccc]
+2025-08-19T11:47:59.053+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a41717193bcda75c0cc3ed6c014342-5c0cc3ed6c014342] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.getEmployeeByDepartment(..)
+2025-08-19T11:47:59.057+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a41717193bcda75c0cc3ed6c014342-5c0cc3ed6c014342] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getEmployeeByDepartment(..)
+2025-08-19T11:47:59.058+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a41717193bcda75c0cc3ed6c014342-5c0cc3ed6c014342] c.m.employee_service.aspect.Logging      : Entering method: EmployeeRepository.findByDepartmentId(..)
+2025-08-19T11:47:59.072+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a41717193bcda75c0cc3ed6c014342-5c0cc3ed6c014342] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeRepository.findByDepartmentId(..) with result: [com.mokinder.employee_service.model.Employee@17fe3975, com.mokinder.employee_service.model.Employee@472016de]
+2025-08-19T11:47:59.072+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a41717193bcda75c0cc3ed6c014342-5c0cc3ed6c014342] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getEmployeeByDepartment(..) with result: [com.mokinder.employee_service.model.Employee@17fe3975, com.mokinder.employee_service.model.Employee@472016de]
+2025-08-19T11:47:59.072+05:30  INFO 95772 --- [employee-service] [http-nio-8081-exec-3] [68a41717193bcda75c0cc3ed6c014342-5c0cc3ed6c014342] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.getEmployeeByDepartment(..) with result: [com.mokinder.employee_service.model.Employee@17fe3975, com.mokinder.employee_service.model.Employee@472016de]
+2025-08-19T11:48:28.566+05:30  INFO 95772 --- [employee-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:49:34.693+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2025-08-19T11:49:34.694+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755584374694, current=DOWN, previous=UP]
+2025-08-19T11:49:34.694+05:30  INFO 95772 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:49:34.702+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T11:49:34.705+05:30  INFO 95772 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:49:34.705+05:30  INFO 95772 --- [employee-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T11:49:34.712+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:49:34.715+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T11:49:34.717+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T11:49:34.718+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T11:49:37.724+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T11:49:37.731+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - deregister  status: 200
+2025-08-19T11:49:37.731+05:30  INFO 95772 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T11:49:40.191+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 24.0.2 with PID 96000 (/Users/mokinders/IdeaProjects/employee-service/target/classes started by mokinders in /Users/mokinders/IdeaProjects/employee-service)
+2025-08-19T11:49:40.193+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T11:49:40.215+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8088
+2025-08-19T11:49:40.215+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=employee-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T11:49:40.668+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:49:40.669+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-19T11:49:40.682+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mokinder.employee_service.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-19T11:49:40.682+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2025-08-19T11:49:40.687+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T11:49:40.690+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T11:49:40.746+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
+2025-08-19T11:49:40.817+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=df4c20e8-b157-3ee5-8fb9-5f78581303de
+2025-08-19T11:49:41.114+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-19T11:49:41.123+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T11:49:41.123+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T11:49:41.153+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T11:49:41.154+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 937 ms
+2025-08-19T11:49:41.405+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T11:49:41.430+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T11:49:41.445+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T11:49:41.561+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T11:49:41.574+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T11:49:41.669+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:5ee4900b-28c2-48c4-b7af-9c4ccadb2029 user=SA
+2025-08-19T11:49:41.669+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T11:49:41.701+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T11:49:42.065+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T11:49:42.097+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:49:42.294+05:30  WARN 96000 --- [employee-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T11:49:42.876+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:5ee4900b-28c2-48c4-b7af-9c4ccadb2029'
+2025-08-19T11:49:42.919+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T11:49:42.958+05:30  WARN 96000 --- [employee-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T11:49:42.966+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T11:49:43.050+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T11:49:43.065+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T11:49:43.068+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:49:43.078+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T11:49:43.078+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T11:49:43.078+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T11:49:43.079+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T11:49:43.079+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T11:49:43.079+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T11:49:43.079+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T11:49:43.270+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T11:49:43.271+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T11:49:43.272+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T11:49:43.272+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755584383272 with initial instances count: 2
+2025-08-19T11:49:43.276+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2025-08-19T11:49:43.276+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755584383276, current=UP, previous=STARTING]
+2025-08-19T11:49:43.277+05:30  INFO 96000 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T11:49:43.290+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-19T11:49:43.291+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-19T11:49:43.303+05:30  INFO 96000 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T11:49:43.316+05:30  INFO 96000 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 3.91 seconds (process running for 4.245)
+2025-08-19T11:50:14.497+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T11:50:14.497+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T11:50:14.500+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-19T11:50:14.538+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [68a4179eab962508ea84d57e7e3d8fb9-ea84d57e7e3d8fb9] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.createEmployee(..)
+2025-08-19T11:50:14.538+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [68a4179eab962508ea84d57e7e3d8fb9-ea84d57e7e3d8fb9] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.addEmployee(..)
+2025-08-19T11:50:14.541+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [68a4179eab962508ea84d57e7e3d8fb9-ea84d57e7e3d8fb9] c.m.employee_service.aspect.Logging      : Entering method: CrudRepository.save(..)
+2025-08-19T11:50:14.594+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [68a4179eab962508ea84d57e7e3d8fb9-ea84d57e7e3d8fb9] c.m.employee_service.aspect.Logging      : Exiting method: CrudRepository.save(..) with result: Employee{id=1, name='Ram', age=25, departmentId=1, position='senior'}
+2025-08-19T11:50:14.595+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [68a4179eab962508ea84d57e7e3d8fb9-ea84d57e7e3d8fb9] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.addEmployee(..) with result: Employee{id=1, name='Ram', age=25, departmentId=1, position='senior'}
+2025-08-19T11:50:14.595+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-2] [68a4179eab962508ea84d57e7e3d8fb9-ea84d57e7e3d8fb9] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.createEmployee(..) with result: Employee{id=1, name='Ram', age=25, departmentId=1, position='senior'}
+2025-08-19T11:54:43.137+05:30  INFO 96000 --- [employee-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:59:43.150+05:30  INFO 96000 --- [employee-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T12:03:01.526+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-6] [68a41a9d739bb1a852eff28e3fafa75b-52eff28e3fafa75b] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.getAllEmployee()
+2025-08-19T12:03:01.528+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-6] [68a41a9d739bb1a852eff28e3fafa75b-52eff28e3fafa75b] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getAll()
+2025-08-19T12:03:01.537+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-6] [68a41a9d739bb1a852eff28e3fafa75b-52eff28e3fafa75b] c.m.employee_service.aspect.Logging      : Entering method: ListCrudRepository.findAll()
+2025-08-19T12:03:01.638+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-6] [68a41a9d739bb1a852eff28e3fafa75b-52eff28e3fafa75b] c.m.employee_service.aspect.Logging      : Exiting method: ListCrudRepository.findAll() with result: [Employee{id=1, name='Ram', age=25, departmentId=1, position='senior'}]
+2025-08-19T12:03:01.639+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-6] [68a41a9d739bb1a852eff28e3fafa75b-52eff28e3fafa75b] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getAll() with result: [Employee{id=1, name='Ram', age=25, departmentId=1, position='senior'}]
+2025-08-19T12:03:01.639+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-6] [68a41a9d739bb1a852eff28e3fafa75b-52eff28e3fafa75b] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.getAllEmployee() with result: [Employee{id=1, name='Ram', age=25, departmentId=1, position='senior'}]
+2025-08-19T12:03:15.823+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-7] [68a41aab0fd33c171bf49d6a0d1e80ef-1bf49d6a0d1e80ef] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.getEmployeeById(..)
+2025-08-19T12:03:15.823+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-7] [68a41aab0fd33c171bf49d6a0d1e80ef-1bf49d6a0d1e80ef] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getByEmployeeId(..)
+2025-08-19T12:03:15.824+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-7] [68a41aab0fd33c171bf49d6a0d1e80ef-1bf49d6a0d1e80ef] c.m.employee_service.aspect.Logging      : Entering method: CrudRepository.findById(..)
+2025-08-19T12:03:15.839+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-7] [68a41aab0fd33c171bf49d6a0d1e80ef-1bf49d6a0d1e80ef] c.m.employee_service.aspect.Logging      : Exiting method: CrudRepository.findById(..) with result: Optional.empty
+2025-08-19T12:03:15.839+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-7] [68a41aab0fd33c171bf49d6a0d1e80ef-1bf49d6a0d1e80ef] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeService.getByEmployeeId(..) with result: Optional.empty
+2025-08-19T12:03:15.839+05:30  INFO 96000 --- [employee-service] [http-nio-8081-exec-7] [68a41aab0fd33c171bf49d6a0d1e80ef-1bf49d6a0d1e80ef] c.m.employee_service.aspect.Logging      : Exiting method: EmployeeController.getEmployeeById(..) with result: Optional.empty
+2025-08-19T12:04:43.163+05:30  INFO 96000 --- [employee-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T12:05:46.500+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EMPLOYEE-SERVICE with eureka with status DOWN
+2025-08-19T12:05:46.500+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755585346500, current=DOWN, previous=UP]
+2025-08-19T12:05:46.501+05:30  INFO 96000 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T12:05:46.512+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T12:05:46.513+05:30  INFO 96000 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T12:05:46.516+05:30  INFO 96000 --- [employee-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T12:05:46.534+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T12:05:46.537+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T12:05:46.539+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T12:05:46.540+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T12:05:49.546+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T12:05:49.559+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - deregister  status: 200
+2025-08-19T12:05:49.560+05:30  INFO 96000 --- [employee-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T12:05:52.092+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Starting EmployeeServiceApplication using Java 24.0.2 with PID 97246 (/Users/mokinders/IdeaProjects/employee-service/target/classes started by mokinders in /Users/mokinders/IdeaProjects/employee-service)
+2025-08-19T12:05:52.094+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T12:05:52.112+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8088
+2025-08-19T12:05:52.112+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=employee-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T12:05:52.564+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T12:05:52.565+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-19T12:05:52.581+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mokinder.employee_service.repository.EmployeeRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-19T12:05:52.581+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+2025-08-19T12:05:52.587+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-19T12:05:52.587+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T12:05:52.643+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-08-19T12:05:52.712+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=df4c20e8-b157-3ee5-8fb9-5f78581303de
+2025-08-19T12:05:52.997+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-19T12:05:53.006+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T12:05:53.006+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T12:05:53.035+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T12:05:53.035+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 922 ms
+2025-08-19T12:05:53.293+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T12:05:53.316+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T12:05:53.331+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T12:05:53.449+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T12:05:53.467+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T12:05:53.555+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:25eae964-dc8d-4c11-8473-dd3bd55fd797 user=SA
+2025-08-19T12:05:53.556+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T12:05:53.589+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T12:05:53.944+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T12:05:53.971+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T12:05:54.162+05:30  WARN 97246 --- [employee-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T12:05:54.542+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:25eae964-dc8d-4c11-8473-dd3bd55fd797'
+2025-08-19T12:05:54.561+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T12:05:54.587+05:30  WARN 97246 --- [employee-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T12:05:54.593+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T12:05:54.636+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T12:05:54.647+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T12:05:54.649+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T12:05:54.652+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T12:05:54.653+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T12:05:54.653+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T12:05:54.653+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T12:05:54.653+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T12:05:54.653+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T12:05:54.653+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T12:05:54.804+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T12:05:54.805+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T12:05:54.810+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T12:05:54.811+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755585354811 with initial instances count: 2
+2025-08-19T12:05:54.815+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EMPLOYEE-SERVICE with eureka with status UP
+2025-08-19T12:05:54.815+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755585354815, current=UP, previous=STARTING]
+2025-08-19T12:05:54.816+05:30  INFO 97246 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081: registering service...
+2025-08-19T12:05:54.827+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-19T12:05:54.828+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-19T12:05:54.839+05:30  INFO 97246 --- [employee-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EMPLOYEE-SERVICE/192.168.207.42:employee-service:8081 - registration status: 204
+2025-08-19T12:05:54.849+05:30  INFO 97246 --- [employee-service] [main] [                                                 ] c.m.e.EmployeeServiceApplication         : Started EmployeeServiceApplication in 3.446 seconds (process running for 3.795)
+2025-08-19T12:06:07.694+05:30  INFO 97246 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T12:06:07.695+05:30  INFO 97246 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T12:06:07.696+05:30  INFO 97246 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-19T12:06:07.723+05:30  INFO 97246 --- [employee-service] [http-nio-8081-exec-2] [68a41b5765d56375fdc722ac882aac5a-fdc722ac882aac5a] c.m.employee_service.aspect.Logging      : Entering method: EmployeeController.getEmployeeById(..)
+2025-08-19T12:06:07.723+05:30  INFO 97246 --- [employee-service] [http-nio-8081-exec-2] [68a41b5765d56375fdc722ac882aac5a-fdc722ac882aac5a] c.m.employee_service.aspect.Logging      : Entering method: EmployeeService.getByEmployeeId(..)
+2025-08-19T12:06:07.725+05:30  INFO 97246 --- [employee-service] [http-nio-8081-exec-2] [68a41b5765d56375fdc722ac882aac5a-fdc722ac882aac5a] c.m.employee_service.aspect.Logging      : Entering method: CrudRepository.findById(..)
+2025-08-19T12:06:07.766+05:30  INFO 97246 --- [employee-service] [http-nio-8081-exec-2] [68a41b5765d56375fdc722ac882aac5a-fdc722ac882aac5a] c.m.employee_service.aspect.Logging      : Exiting method: CrudRepository.findById(..) with result: Optional.empty
+2025-08-19T12:06:07.766+05:30 ERROR 97246 --- [employee-service] [http-nio-8081-exec-2] [68a41b5765d56375fdc722ac882aac5a-fdc722ac882aac5a] c.m.employee_service.aspect.Logging      : Exception in method: EmployeeService.getByEmployeeId(..)
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377) ~[na:na]
+	at com.mokinder.employee_service.service.EmployeeService.getByEmployeeId(EmployeeService.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.aspect.Logging.log(Logging.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.service.EmployeeService$$SpringCGLIB$$0.getByEmployeeId(<generated>) ~[classes/:na]
+	at com.mokinder.employee_service.controller.EmployeeController.getEmployeeById(EmployeeController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.aspect.Logging.log(Logging.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.controller.EmployeeController$$SpringCGLIB$$0.getEmployeeById(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-19T12:06:07.769+05:30 ERROR 97246 --- [employee-service] [http-nio-8081-exec-2] [68a41b5765d56375fdc722ac882aac5a-fdc722ac882aac5a] c.m.employee_service.aspect.Logging      : Exception in method: EmployeeController.getEmployeeById(..)
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377) ~[na:na]
+	at com.mokinder.employee_service.service.EmployeeService.getByEmployeeId(EmployeeService.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.aspect.Logging.log(Logging.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.service.EmployeeService$$SpringCGLIB$$0.getByEmployeeId(<generated>) ~[classes/:na]
+	at com.mokinder.employee_service.controller.EmployeeController.getEmployeeById(EmployeeController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.aspect.Logging.log(Logging.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.controller.EmployeeController$$SpringCGLIB$$0.getEmployeeById(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2025-08-19T12:06:07.773+05:30 ERROR 97246 --- [employee-service] [http-nio-8081-exec-2] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.orElseThrow(Optional.java:377) ~[na:na]
+	at com.mokinder.employee_service.service.EmployeeService.getByEmployeeId(EmployeeService.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.aspect.Logging.log(Logging.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.service.EmployeeService$$SpringCGLIB$$0.getByEmployeeId(<generated>) ~[classes/:na]
+	at com.mokinder.employee_service.controller.EmployeeController.getEmployeeById(EmployeeController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.aspect.Logging.log(Logging.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:649) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:631) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.mokinder.employee_service.controller.EmployeeController$$SpringCGLIB$$0.getEmployeeById(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
