@@ -29,4 +29,9 @@ public class Logging {
         return result;
     }
 
+    @AfterThrowing(value ="logserviceMethods()",throwing = "expection")
+    public void expection(ProceedingJoinPoint joinPoint, Exception exception){
+        log.info("After method invoke :: {}", exception.getMessage());
+    }
+
 }
